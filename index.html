@@ -13,15 +13,15 @@
             then move on to how to get Git running on your system and finally how to get it set up to start working with. At the end of
             this chapter you should understand why Git is around, why you should use it and you should be all set up to do so.
         </p>
-    
+
         <h2>About Version Control</h2>
-        
+
         <p>
             What is “version control”, and why should you care? Version control is a system that records changes to a file or set of files
             over time so that you can recall specific versions later. For the examples in this book, you will use software source code
             as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.
         </p>
-    
+
         <p>
             If you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want
             to), a Version Control System (VCS) is a very wise thing to use. It allows you to revert selected files back to a previous
@@ -29,31 +29,31 @@
             be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you screw things up
             or lose files, you can easily recover. In addition, you get all this for very little overhead.
         </p>
-    
+
         <h2>Local Version Control Systems</h2>
-    
+
         <p>
             Many people’s version-control method of choice is to copy files into another directory (perhaps a time-stamped directory, if
             they’re clever). This approach is very common because it is so simple, but it is also incredibly error prone. It is easy to
             forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to.
         </p>
-    
+
         <p>
             To deal with this issue, programmers long ago developed local VCSs that had a simple database that kept all the changes to
             files under revision control.
         </p>
 
         <figure>
-            <img source="https://git-scm.com/book/en/v2/images/local.png" />
+            <img src="https://git-scm.com/book/en/v2/images/local.png" />
             <figcaption>Figure 1. Local version control.</figcaption>
         </figure>
-    
+
         <p>
             One of the most popular VCS tools was a system called RCS, which is still distributed with many computers today. RCS works by
             keeping patch sets (that is, the differences between files) in a special format on disk; it can then re-create what any file
             looked like at any point in time by adding up all the patches.
         </p>
-    
+
         <h2>Centralized Version Control Systems</h2>
 
         <p>
@@ -64,7 +64,7 @@
         </p>
 
         <figure>
-            <img source="https://git-scm.com/book/en/v2/images/centralized.png" />
+            <img src="https://git-scm.com/book/en/v2/images/centralized.png" />
             <figcaption>Figure 2. Centralized version control.</figcaption>
         </figure>
 
@@ -73,7 +73,7 @@
             project is doing. Administrators have fine-grained control over who can do what, and it’s far easier to administer a CVCS than it is to deal
             with local databases on every client.
         </p>
-    
+
         <p>
             However, this setup also has some serious downsides. The most obvious is the single point of failure that the centralized server represents.
             If that server goes down for an hour, then during that hour nobody can collaborate at all or save versioned changes to anything they’re working
@@ -81,7 +81,7 @@
             entire history of the project except whatever single snapshots people happen to have on their local machines. Local VCS systems suffer from
             this same problem — whenever you have the entire history of the project in a single place, you risk losing everything.
         </p>
-    
+
         <h2>Distributed Version Control Systems</h2>
         <p>
             This is where Distributed Version Control Systems (DVCSs) step in. In a DVCS (such as Git, Mercurial, Bazaar or Darcs), clients don’t just check
@@ -91,7 +91,7 @@
         </p>
 
         <figure>
-            <img source="https://git-scm.com/book/en/v2/images/distributed.png" />
+            <img src="https://git-scm.com/book/en/v2/images/distributed.png" />
             <figcaption>Figure 3. Distributed version control.</figcaption>
         </figure>
 
